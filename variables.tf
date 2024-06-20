@@ -1,5 +1,4 @@
-
-
+#--- Boundary connection variables
 variable "boundary_address" {
   type = string
 }
@@ -69,3 +68,8 @@ variable "load_balancer_dns_name" {
 }
 
 variable "TFC_WORKSPACE_ID" {}
+
+variable "vault_address" {
+  description = "Vault address for Boundary credential store configuration."
+  default = "https://vault.hashicorp.local:8200"
+}

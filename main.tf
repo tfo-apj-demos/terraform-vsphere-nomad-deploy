@@ -130,7 +130,7 @@ module "boundary_target" {
   hostname_prefix        = "ssh"
   
   credential_store_token = module.ssh_role.token
-  #vault_address          = var.vault_address
+  vault_address          = var.vault_address
   #vault_ca_cert          = file("${path.root}/ca_cert_dir/ca_chain.pem")
 }
 
